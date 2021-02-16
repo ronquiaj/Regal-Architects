@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Regal Architecture</title>
+  </head>
+  <body class="regal">
+    <header class="header">
+      <div class="img">
+        <div class="logo-box">
+          <div class="logo-box--text">Regal</div>
+          <div class="logo-box--subheading">Sleek, modern, regal.</div>
+        </div>
+      </div>
+    </header>
+    <section class="why row">
+      <h4
+        class="why-text--1 col-1-of-2"
+        data-aos="fade-right"
+        data-aos-duration="1400"
+        data-aos-once="true"
+      >
+        Why choose Regal?
+      </h4>
+      <h4
+        data-aos="fade-left"
+        data-aos-duration="1400"
+        data-aos-once="true"
+        class="why-text--2 col-1-of-2"
+      >
+        Regal has helped over <span class="why-stats">300</span> businesses with architecture,
+        including Amazon, Facebook, and Google.
+      </h4>
+    </section>
+    <section
+      class="buildings row"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
+      <img class="col-1-of-4 building building--1" src="./sass/imgs/regal2.jpeg" alt="" />
+      <img class="col-1-of-4 building building--2" src="./sass/imgs/regal6.jpg" alt="" />
+      <img class="col-1-of-4 building building--3" src="./sass/imgs/regal7.jpg" alt="" />
+      <img class="col-1-of-4 building building--4" src="./sass/imgs/regal4.jpg" alt="" />
+    </section>
+  </body>
+  <script src="./index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
