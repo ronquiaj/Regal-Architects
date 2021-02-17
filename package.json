@@ -19,6 +19,7 @@
   "author": "Adrian B Ronquillo",
   "license": "ISC",
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "node-sass": "^5.0.0"
   }
 }
