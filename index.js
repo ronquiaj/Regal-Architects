@@ -1,3 +1,5 @@
+let done = false;
+
 const changePhoto = () => {
   document.querySelector(".partner--4").classList.remove("visible");
   document.querySelector(".partner--4").classList.add("transitioning");
@@ -28,3 +30,15 @@ changePhoto();
 setInterval(() => {
   changePhoto();
 }, 30000);
+
+window.onscroll = function (ev) {
+  if (!done && window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+    done = true;
+    setTimeout(() => {
+      document.querySelector(".landing-end--text").classList.add("invisible");
+      setTimeout(() => {
+        document.querySelector(".landing-end--button").classList.add("visible");
+      }, 1500);
+    }, 2000);
+  }
+};
